@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sensorywizards2",
+	"version": "${version}",
+	"name": "SensoryWizards2",
+	"description": "This is a new magic mod and a restructuring of the first attempt at writing code",
+	"authors": [
+		"ProfPlantBoy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sensorywizards2/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.profplanyboy.sensorywizards2.SensoryWizards2"
+		],
+		"fabric-datagen": [
+			"net.profplanyboy.sensorywizards2.SensoryWizards2DataGenerator"
+		],
+      "client": [
+        "net.profplanyboy.sensorywizards2.client.SensoryWizards2Client"
+      ]
+	},
+	"mixins": [
+		"sensorywizards2.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
