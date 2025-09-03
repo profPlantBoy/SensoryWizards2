@@ -45,5 +45,6 @@
   "item.sensorywizards2.rune_glowing_green": "Glowing Green Rune Line",
   "item.sensorywizards2.rune_glowing_purple": "Glowing Purple Rune Line",
 
-  "itemGroup.sensorywizards2": "SensoryWizards2"
+  "itemGroup.sensorywizards2": "SensoryWizards2",
+  "itemGroup.sensorywizards2_wands": "SensoryWizards2 Wands"
 }

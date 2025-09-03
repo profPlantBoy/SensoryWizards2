@@ -7,8 +7,8 @@ import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.CustomModelDataComponent;
 import net.minecraft.component.type.TooltipDisplayComponent;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item.TooltipContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
 import net.profplantboy.sensorywizards2.component.ModComponents;
@@ -19,46 +19,48 @@ import java.util.Set;
 import java.util.function.Consumer;
 
 public class WandItem extends Item {
-    public WandItem(Settings settings) { super(settings); }
+    public WandItem(Settings settings) {
+        super(settings);
+    }
 
-    /** Build a wand stack from chosen part ids (e.g., "leather","oak","amethyst", Set.of("glowing_blue")) */
-    public static ItemStack make(String handle, String rod, String tip, Set<String> runes) {
-        ItemStack stack = new ItemStack(ModItems.WAND);
+    /** Build a wand stack from chosen part ids (e.g., "leather","oak","amethyst"). */
+    public static ItemStack make(String handle, String rod, String tip) {
+        ItemStack stack = new ItemStack(ModItems.WAND); // Always a new stack
 
-        // 1) Store the functional parts (gameplay logic can read these)
-        stack.set(ModComponents.WAND_PARTS, new WandParts(handle, rod, tip, runes));
+        // Store your own parts component
+        stack.set(ModComponents.WAND_PARTS, new WandParts(handle, rod, tip));
 
-        // 2) Drive visuals using the new custom_model_data (strings & flags)
-        // strings[0] = "handle/leather", strings[1] = "rod/oak", strings[2] = "tip/amethyst"
-        // flags[0..] = booleans for rune overlays
-        List<String> strings = List.of("handle/" + handle, "rod/" + rod, "tip/" + tip);
-        List<Boolean> flags = List.of(
-                runes.contains("glowing_blue"),
-                runes.contains("glowing_red"),
-                runes.contains("glowing_green"),
-                runes.contains("glowing_purple")
+        // Drive vanilla CustomModelData:
+        // SIGNATURE (in your mappings): floats, flags, strings, colors
+        CustomModelDataComponent cmd = new CustomModelDataComponent(
+                List.<Float>of(),                                                // floats
+                List.<Boolean>of(),                                             // flags
+                List.<String>of("handle/" + handle, "rod/" + rod, "tip/" + tip),// strings (indices 0,1,2)
+                List.<Integer>of()                                              // colors (ARGB ints)
         );
+        stack.set(DataComponentTypes.CUSTOM_MODEL_DATA, cmd);
 
-        stack.set(DataComponentTypes.CUSTOM_MODEL_DATA, new CustomModelDataComponent(
-                List.of(),     // floats (unused)
-                flags,         // flags
-                strings,       // strings
-                List.of()      // colors (optional)
-        ));
         return stack;
     }
 
-    // Nice name like: Wand (leather, oak, amethyst)
+    /** Back-compat: old signature that used to carry runes. Now ignored. */
+    public static ItemStack make(String handle, String rod, String tip, Set<?> ignoredRunes) {
+        return make(handle, rod, tip);
+    }
+
+    /** Safe accessor for parts (returns "?, ?, ?" if the component is missing). */
+    public static WandParts getParts(ItemStack stack) {
+        return stack.getOrDefault(ModComponents.WAND_PARTS, new WandParts("?", "?", "?"));
+    }
+
+    /** Nice name like: Wand (leather, oak, amethyst) */
     @Override
     public Text getName(ItemStack stack) {
-        WandParts p = stack.getOrDefault(
-                ModComponents.WAND_PARTS,
-                new WandParts("?", "?", "?", Set.of())
-        );
+        WandParts p = getParts(stack);
         return Text.literal("Wand (" + p.handle() + ", " + p.rod() + ", " + p.tip() + ")");
     }
 
-    // 1.21.8 signature (deprecated but still valid). Use Fabric's registry later if you want.
+    // 1.21.x tooltip signature
     @Environment(EnvType.CLIENT)
     @Override
     public void appendTooltip(ItemStack stack,
@@ -66,15 +68,9 @@ public class WandItem extends Item {
                               TooltipDisplayComponent displayComponent,
                               Consumer<Text> textConsumer,
                               TooltipType type) {
-        WandParts p = stack.getOrDefault(
-                ModComponents.WAND_PARTS,
-                new WandParts("?", "?", "?", Set.of())
-        );
+        WandParts p = getParts(stack);
         textConsumer.accept(Text.literal("Handle: " + p.handle()));
         textConsumer.accept(Text.literal("Rod: " + p.rod()));
         textConsumer.accept(Text.literal("Tip: " + p.tip()));
-        if (!p.runes().isEmpty()) {
-            textConsumer.accept(Text.literal("Runes: " + String.join(", ", p.runes())));
-        }
     }
 }

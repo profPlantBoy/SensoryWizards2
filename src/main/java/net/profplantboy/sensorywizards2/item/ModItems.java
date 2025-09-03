@@ -30,17 +30,14 @@ public final class ModItems {
 
     // --- Wand part name lists -----------------------------------------------
     private static final String[] HANDLE_NAMES = {
-            "leather","carved_bone","moss","copper_band","iron_band","gold_band","diamond_band","netherite_band"
+            "leather"
     };
     private static final String[] ROD_NAMES = {
-            "oak","dark_oak","spruce","mangrove","acacia","birch","cherry","bamboo","jungle","crimson","warped","pale_oak",
+            "oak","dark_oak","spruce","mangrove","birch","cherry","bamboo","jungle","crimson","warped","pale_oak",
             "alder","ash","chestnut","hawthorn","holly","yew"
     };
     private static final String[] TIP_NAMES = {
-            "amethyst","diamond","iron","copper","gold","netherite","mushroom_cap","sprouting_bud","blazing_cap"
-    };
-    private static final String[] RUNE_NAMES = {
-            "glowing_blue","glowing_red","glowing_green","glowing_purple"
+            "amethyst","diamond","iron","copper","gold","netherite","mushroom_cap","sprouting_bud"
     };
 
     // --- Spell IDs shown in your custom tab (variants) ----------------------
@@ -54,13 +51,13 @@ public final class ModItems {
     public static final Map<String, Item> HANDLES = new LinkedHashMap<>();
     public static final Map<String, Item> RODS    = new LinkedHashMap<>();
     public static final Map<String, Item> TIPS    = new LinkedHashMap<>();
-    public static final Map<String, Item> RUNES   = new LinkedHashMap<>();
+
 
     static {
         registerParts(HANDLES, "handle", HANDLE_NAMES);
         registerParts(RODS,    "rod",    ROD_NAMES);
         registerParts(TIPS,    "tip",    TIP_NAMES);
-        registerParts(RUNES,   "rune",   RUNE_NAMES);
+
     }
 
     private static void registerParts(Map<String, Item> bucket, String prefix, String[] names) {
@@ -77,7 +74,7 @@ public final class ModItems {
         // No ItemGroupEvents here — your custom tab (ModItemGroups) handles display.
     }
 
-    public static Item makeTestWandToEntries(String handle, String rod, String tip, Set<String> runes) {
+    public static Item makeTestWandToEntries(String handle, String rod, String tip) {
         return WAND;
     }
 }
