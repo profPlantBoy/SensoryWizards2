@@ -1,4 +1,4 @@
-package net.profplanyboy.sensorywizards2;
+package net.profplantboy.sensorywizards2;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

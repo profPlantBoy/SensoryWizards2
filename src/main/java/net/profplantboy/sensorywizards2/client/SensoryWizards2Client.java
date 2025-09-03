@@ -1,4 +1,4 @@
-package net.profplanyboy.sensorywizards2.client;
+package net.profplantboy.sensorywizards2.client;
 
 import net.fabricmc.api.ClientModInitializer;
 

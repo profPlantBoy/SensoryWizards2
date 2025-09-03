@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.profplanyboy.sensorywizards2.SensoryWizards2"
+			"net.profplantboy.sensorywizards2.SensoryWizards2"
 		],
 		"fabric-datagen": [
-			"net.profplanyboy.sensorywizards2.SensoryWizards2DataGenerator"
+			"net.profplantboy.sensorywizards2.SensoryWizards2DataGenerator"
 		],
       "client": [
-        "net.profplanyboy.sensorywizards2.client.SensoryWizards2Client"
+        "net.profplantboy.sensorywizards2.client.SensoryWizards2Client"
       ]
 	},
 	"mixins": [

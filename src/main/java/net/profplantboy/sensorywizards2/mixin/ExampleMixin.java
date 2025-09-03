@@ -1,4 +1,4 @@
-package net.profplanyboy.sensorywizards2.mixin;
+package net.profplantboy.sensorywizards2.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

@@ -1,0 +1,49 @@
+{
+  "format_version": "1.21.6",
+  "parent": "sensorywizards2:item/wand/base_handheld",
+  "texture_size": [64, 64],
+  "textures": { "layer0": "sensorywizards2:item/wand/tip/gold" },
+  "elements": [
+    { "from": [8, 14, 8], "to": [9, 16, 9], "rotation": { "angle": 0, "axis": "y", "origin": [7, 14, 7] },
+      "faces": {
+        "north": { "uv": [0.25, 0.5, 0.5, 1.0], "texture": "#layer0" },
+        "east":  { "uv": [0.0,  0.5, 0.25, 1.0], "texture": "#layer0" },
+        "south": { "uv": [0.75, 0.5, 1.0,  1.0], "texture": "#layer0" },
+        "west":  { "uv": [0.5,  0.5, 0.75, 1.0], "texture": "#layer0" },
+        "up":    { "uv": [0.5,  0.5, 0.25, 0.25], "texture": "#layer0" },
+        "down":  { "uv": [0.75, 0.25, 0.5,  0.5], "texture": "#layer0" }
+      }
+    },
+    { "from": [7, 14, 8], "to": [8, 15, 9], "rotation": { "angle": 0, "axis": "y", "origin": [6, 14, 7] },
+      "faces": {
+        "north": { "uv": [0.25, 0.5, 0.5,  0.75], "texture": "#layer0" },
+        "east":  { "uv": [0.0,  0.5, 0.25, 0.75], "texture": "#layer0" },
+        "south": { "uv": [0.75, 0.5, 1.0,  0.75], "texture": "#layer0" },
+        "west":  { "uv": [0.5,  0.5, 0.75, 0.75], "texture": "#layer0" },
+        "up":    { "uv": [0.5,  0.5, 0.25, 0.25], "texture": "#layer0" },
+        "down":  { "uv": [0.75, 0.25, 0.5,  0.5],  "texture": "#layer0" }
+      }
+    },
+    { "from": [7, 14, 7], "to": [8, 14.5, 8], "rotation": { "angle": 0, "axis": "y", "origin": [6, 14, 6] },
+      "faces": {
+        "north": { "uv": [0.25, 0.5, 0.5,  0.5],  "texture": "#layer0" },
+        "east":  { "uv": [0.0,  0.5, 0.25, 0.5],  "texture": "#layer0" },
+        "south": { "uv": [0.75, 0.5, 1.0,  0.5],  "texture": "#layer0" },
+        "west":  { "uv": [0.5,  0.5, 0.75, 0.5],  "texture": "#layer0" },
+        "up":    { "uv": [0.5,  0.5, 0.25, 0.25], "texture": "#layer0" },
+        "down":  { "uv": [0.75, 0.25, 0.5,  0.5],  "texture": "#layer0" }
+      }
+    },
+    { "from": [8, 14, 7], "to": [9, 15.5, 8], "rotation": { "angle": 0, "axis": "y", "origin": [7, 14, 6] },
+      "faces": {
+        "north": { "uv": [0.25, 0.5, 0.5,  0.75], "texture": "#layer0" },
+        "east":  { "uv": [0.0,  0.5, 0.25, 0.75], "texture": "#layer0" },
+        "south": { "uv": [0.75, 0.5, 1.0,  0.75], "texture": "#layer0" },
+        "west":  { "uv": [0.5,  0.5, 0.75, 0.75], "texture": "#layer0" },
+        "up":    { "uv": [0.5,  0.5, 0.25, 0.25], "texture": "#layer0" },
+        "down":  { "uv": [0.75, 0.25, 0.5,  0.5],  "texture": "#layer0" }
+      }
+    }
+  ],
+  "groups": [ { "name": "Tip", "origin": [8, 8, 8], "children": [0, 1, 2, 3] } ]
+}
