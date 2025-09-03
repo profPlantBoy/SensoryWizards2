@@ -1,22 +1,16 @@
 {
-  "format_version": "1.21.6",
   "parent": "sensorywizards2:item/wand/base_handheld",
-  "texture_size": [64, 64],
   "textures": { "layer0": "sensorywizards2:item/wand/rod/alder" },
   "elements": [
-    {
-      "from": [7, 5, 7],
-      "to": [9, 14, 9],
-      "rotation": { "angle": 0, "axis": "y", "origin": [7, 4, 7] },
+    { "from":[7,5,7], "to":[9,14,9],
       "faces": {
-        "north": { "uv": [0, 0, 0.5, 2.25], "texture": "#layer0" },
-        "east":  { "uv": [0, 0, 0.5, 2.25], "texture": "#layer0" },
-        "south": { "uv": [0, 0, 0.5, 2.25], "texture": "#layer0" },
-        "west":  { "uv": [0, 0, 0.5, 2.25], "texture": "#layer0" },
-        "up":    { "uv": [0, 0, 0.5, 0.5],  "texture": "#layer0" },
-        "down":  { "uv": [0, 0, 0.5, 0.5],  "texture": "#layer0" }
+        "north":{"uv":[0,0,0.5,2.25], "texture":"#layer0"},
+        "east": {"uv":[0,0,0.5,2.25], "texture":"#layer0"},
+        "south":{"uv":[0,0,0.5,2.25], "texture":"#layer0"},
+        "west": {"uv":[0,0,0.5,2.25], "texture":"#layer0"},
+        "up":   {"uv":[0,0,0.5,0.5],  "texture":"#layer0"},
+        "down": {"uv":[0,0,0.5,0.5],  "texture":"#layer0"}
       }
     }
-  ],
-  "groups": [ { "name": "Rod", "origin": [8, 8, 8], "children": [0] } ]
+  ]
 }

@@ -1,21 +1,16 @@
 {
-  "format_version": "1.21.6",
   "parent": "sensorywizards2:item/wand/base_handheld",
-  "texture_size": [64, 64],
   "textures": { "layer0": "sensorywizards2:item/wand/handle/moss" },
   "elements": [
-    {
-      "from": [7, 0, 7],
-      "to": [9, 5, 9],
+    { "from":[7,0,7], "to":[9,5,9],
       "faces": {
-        "north": { "uv": [0, 0, 0.5, 1.25], "texture": "#layer0" },
-        "east":  { "uv": [0, 0, 0.5, 1.25], "texture": "#layer0" },
-        "south": { "uv": [0, 0, 0.5, 1.25], "texture": "#layer0" },
-        "west":  { "uv": [0, 0, 0.5, 1.25], "texture": "#layer0" },
-        "up":    { "uv": [0, 0, 0.5, 0.5],  "texture": "#layer0" },
-        "down":  { "uv": [0, 0, 0.5, 0.5],  "texture": "#layer0" }
+        "north":{"uv":[0,0,0.5,1.25], "texture":"#layer0"},
+        "east": {"uv":[0,0,0.5,1.25], "texture":"#layer0"},
+        "south":{"uv":[0,0,0.5,1.25], "texture":"#layer0"},
+        "west": {"uv":[0,0,0.5,1.25], "texture":"#layer0"},
+        "up":   {"uv":[0,0,0.5,0.5],  "texture":"#layer0"},
+        "down": {"uv":[0,0,0.5,0.5],  "texture":"#layer0"}
       }
     }
-  ],
-  "groups": [ { "name": "Handle", "origin": [8, 8, 8], "children": [0] } ]
+  ]
 }

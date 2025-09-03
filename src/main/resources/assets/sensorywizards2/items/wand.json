@@ -1,0 +1,56 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "cases": [
+          {
+            "when": "handle/leather",
+            "model": {
+              "type": "minecraft:model",
+              "model": "sensorywizards2:item/wand/handle/leather"
+            }
+          }
+        ]
+      },
+      {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 1,
+        "cases": [
+          {
+            "when": "rod/oak",
+            "model": {
+              "type": "minecraft:model",
+              "model": "sensorywizards2:item/wand/rod/oak"
+            }
+          }
+        ]
+      },
+      {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 2,
+        "cases": [
+          {
+            "when": "tip/amethyst",
+            "model": {
+              "type": "minecraft:model",
+              "model": "sensorywizards2:item/wand/tip/amethyst"
+            }
+          },
+          {
+            "when": "tip/diamond",
+            "model": {
+              "type": "minecraft:model",
+              "model": "sensorywizards2:item/wand/tip/diamond"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

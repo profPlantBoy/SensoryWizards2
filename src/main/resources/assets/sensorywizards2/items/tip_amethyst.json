@@ -1,1 +1,6 @@
-{ "model": "sensorywizards2:item/wand/tip/amethyst" }
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "sensorywizards2:item/wand/tip/amethyst"
+  }
+}
