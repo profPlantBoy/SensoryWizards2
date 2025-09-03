@@ -1,10 +1,12 @@
-// src/main/java/net/profplantboy/sensorywizards2/item/ModItemGroups.java
 package net.profplantboy.sensorywizards2.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.profplantboy.sensorywizards2.SensoryWizards2;
@@ -12,6 +14,29 @@ import net.profplantboy.sensorywizards2.SensoryWizards2;
 public final class ModItemGroups {
     private ModItemGroups() {}
 
+    // New creative tab for Spell Scrolls
+    public static final RegistryKey<ItemGroup> SCROLLS_TAB_KEY =
+            RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(SensoryWizards2.MOD_ID, "spell_scrolls"));
+
+    public static final ItemGroup SCROLLS_TAB = Registry.register(
+            Registries.ITEM_GROUP,
+            SCROLLS_TAB_KEY,
+            FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModItems.SPELL_SCROLL))
+                    .displayName(Text.literal("Sensory Wizards • Scrolls"))
+                    .entries((ctx, entries) -> {
+                        // Base scroll item
+                        entries.add(ModItems.SPELL_SCROLL);
+
+                        // One entry per spell variant
+                        for (String spellId : ModItems.SPELL_IDS) {
+                            entries.add(SpellScrollItem.of(spellId));
+                        }
+                    })
+                    .build()
+    );
+
+    // Main SensoryWizards2 tab (wands + parts only; NO scrolls here)
     public static final ItemGroup SENSORYWIZARDS2 = Registry.register(
             Registries.ITEM_GROUP,
             Identifier.of(SensoryWizards2.MOD_ID, "sensorywizards2"),
@@ -19,17 +44,15 @@ public final class ModItemGroups {
                     .icon(() -> WandItem.make("leather", "yew", "amethyst")) // simple preview, no runes
                     .displayName(Text.translatable("itemGroup.sensorywizards2"))
                     .entries((ctx, entries) -> {
-                        // Main tab
+                        // WAND item
                         entries.add(ModItems.WAND);
 
-                        entries.add(ModItems.SPELL_SCROLL);
-                        for (String id : ModItems.SPELL_IDS) {
-                            entries.add(SpellScrollItem.of(id));
-                        }
-
+                        // WAND PARTS
                         ModItems.HANDLES.values().forEach(entries::add);
                         ModItems.RODS.values().forEach(entries::add);
                         ModItems.TIPS.values().forEach(entries::add);
+
+                        // IMPORTANT: no spell scrolls here anymore
                     })
                     .build()
     );

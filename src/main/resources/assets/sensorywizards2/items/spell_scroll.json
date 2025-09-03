@@ -1,0 +1,32 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "fallback": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll" },
+    "cases": [
+      { "when": "spell/aguamenti",        "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_aguamenti" } },
+      { "when": "spell/alarte_ascendare", "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_alarte_ascendare" } },
+      { "when": "spell/appare_vestigium", "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_appare_vestigium" } },
+      { "when": "spell/apparition",       "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_apparition" } },
+      { "when": "spell/arania_exumai",    "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_arania_exumai" } },
+      { "when": "spell/ascendio",         "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_ascendio" } },
+      { "when": "spell/avada_kedavra",    "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_avada_kedavra" } },
+      { "when": "spell/avifors",          "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_avifors" } },
+      { "when": "spell/baubillious",      "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_baubillious" } },
+      { "when": "spell/bombarda",         "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_bombarda" } },
+      { "when": "spell/bombarda_maxima",  "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_bombarda_maxima" } },
+      { "when": "spell/cave_inimicum",    "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_cave_inimicum" } },
+      { "when": "spell/circumrota",       "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_circumrota" } },
+      { "when": "spell/colovaria",        "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_colovaria" } },
+      { "when": "spell/confundo",         "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_confundo" } },
+      { "when": "spell/crucio",           "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_crucio" } },
+      { "when": "spell/depulso",          "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_depulso" } },
+      { "when": "spell/evanesco",         "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_evanesco" } },
+      { "when": "spell/glacius",          "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_glacius" } },
+      { "when": "spell/confringo",        "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_confringo" } },
+      { "when": "spell/episky",           "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_episky" } },
+      { "when": "spell/unknown",          "model": { "type": "minecraft:model", "model": "sensorywizards2:item/spell/spell_scroll_unknown" } }
+    ]
+  }
+}

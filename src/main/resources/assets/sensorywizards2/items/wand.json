@@ -6,50 +6,50 @@
         "type": "minecraft:select",
         "property": "minecraft:custom_model_data",
         "index": 0,
-        "fallback": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/handle/leather" },
+        "fallback": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/handle/leather" },
         "cases": [
-          { "when": "handle/leather", "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/handle/leather" } }
+          { "when": "handle/leather", "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/handle/leather" } }
         ]
       },
       {
         "type": "minecraft:select",
         "property": "minecraft:custom_model_data",
         "index": 1,
-        "fallback": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/oak" },
+        "fallback": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/oak" },
         "cases": [
-          { "when": "rod/alder",     "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/alder" } },
-          { "when": "rod/ash",       "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/ash" } },
-          { "when": "rod/bamboo",    "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/bamboo" } },
-          { "when": "rod/birch",     "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/birch" } },
-          { "when": "rod/cherry",    "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/cherry" } },
-          { "when": "rod/chestnut",  "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/chestnut" } },
-          { "when": "rod/crimson",   "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/crimson" } },
-          { "when": "rod/dark_oak",  "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/dark_oak" } },
-          { "when": "rod/hawthorn",  "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/hawthorn" } },
-          { "when": "rod/holly",     "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/holly" } },
-          { "when": "rod/jungle",    "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/jungle" } },
-          { "when": "rod/mangrove",  "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/mangrove" } },
-          { "when": "rod/oak",       "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/oak" } },
-          { "when": "rod/pale_oak",  "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/pale_oak" } },
-          { "when": "rod/spruce",    "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/spruce" } },
-          { "when": "rod/warped",    "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/warped" } },
-          { "when": "rod/yew",       "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/rod/yew" } }
+          { "when": "rod/alder",     "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/alder" } },
+          { "when": "rod/ash",       "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/ash" } },
+          { "when": "rod/bamboo",    "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/bamboo" } },
+          { "when": "rod/birch",     "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/birch" } },
+          { "when": "rod/cherry",    "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/cherry" } },
+          { "when": "rod/chestnut",  "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/chestnut" } },
+          { "when": "rod/crimson",   "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/crimson" } },
+          { "when": "rod/dark_oak",  "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/dark_oak" } },
+          { "when": "rod/hawthorn",  "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/hawthorn" } },
+          { "when": "rod/holly",     "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/holly" } },
+          { "when": "rod/jungle",    "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/jungle" } },
+          { "when": "rod/mangrove",  "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/mangrove" } },
+          { "when": "rod/oak",       "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/oak" } },
+          { "when": "rod/pale_oak",  "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/pale_oak" } },
+          { "when": "rod/spruce",    "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/spruce" } },
+          { "when": "rod/warped",    "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/warped" } },
+          { "when": "rod/yew",       "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/rod/yew" } }
         ]
       },
       {
         "type": "minecraft:select",
         "property": "minecraft:custom_model_data",
         "index": 2,
-        "fallback": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/tip/amethyst" },
+        "fallback": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/tip/amethyst" },
         "cases": [
-          { "when": "tip/amethyst",       "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/tip/amethyst" } },
-          { "when": "tip/copper",         "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/tip/copper" } },
-          { "when": "tip/diamond",        "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/tip/diamond" } },
-          { "when": "tip/gold",           "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/tip/gold" } },
-          { "when": "tip/iron",           "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/tip/iron" } },
-          { "when": "tip/mushroom_cap",   "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/tip/mushroom_cap" } },
-          { "when": "tip/netherite",      "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/tip/netherite" } },
-          { "when": "tip/sprouting_bud",  "model": { "type": "minecraft:model", "model": "sensorywizards2:items/wand/tip/sprouting_bud" } }
+          { "when": "tip/amethyst",      "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/tip/amethyst" } },
+          { "when": "tip/copper",        "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/tip/copper" } },
+          { "when": "tip/diamond",       "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/tip/diamond" } },
+          { "when": "tip/gold",          "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/tip/gold" } },
+          { "when": "tip/iron",          "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/tip/iron" } },
+          { "when": "tip/mushroom_cap",  "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/tip/mushroom_cap" } },
+          { "when": "tip/netherite",     "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/tip/netherite" } },
+          { "when": "tip/sprouting_bud", "model": { "type": "minecraft:model", "model": "sensorywizards2:item/wand/tip/sprouting_bud" } }
         ]
       }
     ]

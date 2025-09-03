@@ -15,7 +15,7 @@ public class SensoryWizards2 implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-        ModItems.registerModItems(); // Ensures that items are registered + added to creative mode by initializing the helper method
+        ModItems.init(); // Ensures that items are registered + added to creative mode by initializing the helper method
         ModComponents.init();
         ModAttachments.init();
         ModItemGroups.init(); // Registers New Creative Tab

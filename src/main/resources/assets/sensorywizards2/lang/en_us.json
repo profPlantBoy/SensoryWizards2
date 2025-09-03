@@ -45,6 +45,30 @@
   "item.sensorywizards2.rune_glowing_green": "Glowing Green Rune Line",
   "item.sensorywizards2.rune_glowing_purple": "Glowing Purple Rune Line",
 
-  "itemGroup.sensorywizards2": "SensoryWizards2",
-  "itemGroup.sensorywizards2_wands": "SensoryWizards2 Wands"
+  "item.sensorywizards2.spell_scroll.aguamenti": "Spell Scroll of Aguamenti",
+  "item.sensorywizards2.spell_scroll.alarte_ascendare": "Spell Scroll of Alarte Ascendare",
+  "item.sensorywizards2.spell_scroll.appare_vestigium": "Spell Scroll of Appare Vestigium",
+  "item.sensorywizards2.spell_scroll.apparition": "Spell Scroll of Apparition",
+  "item.sensorywizards2.spell_scroll.arania_exumai": "Spell Scroll of Arania Exumai",
+  "item.sensorywizards2.spell_scroll.ascendio": "Spell Scroll of Ascendio",
+  "item.sensorywizards2.spell_scroll.avada_kedavra": "Spell Scroll of Avada Kedavra",
+  "item.sensorywizards2.spell_scroll.avifors": "Spell Scroll of Avifors",
+  "item.sensorywizards2.spell_scroll.baubillious": "Spell Scroll of Baubillious",
+  "item.sensorywizards2.spell_scroll.bombarda": "Spell Scroll of Bombarda",
+  "item.sensorywizards2.spell_scroll.bombarda_maxima": "Spell Scroll of Bombarda Maxima",
+  "item.sensorywizards2.spell_scroll.cave_inimicum": "Spell Scroll of Cave Inimicum",
+  "item.sensorywizards2.spell_scroll.circumrota": "Spell Scroll of Circumrota",
+  "item.sensorywizards2.spell_scroll.colovaria": "Spell Scroll of Colovaria",
+  "item.sensorywizards2.spell_scroll.confundo": "Spell Scroll of Confundo",
+  "item.sensorywizards2.spell_scroll.crucio": "Spell Scroll of Crucio",
+  "item.sensorywizards2.spell_scroll.depulso": "Spell Scroll of Depulso",
+  "item.sensorywizards2.spell_scroll.evanesco": "Spell Scroll of Evanesco",
+  "item.sensorywizards2.spell_scroll.glacius": "Spell Scroll of Glacius",
+  "item.sensorywizards2.spell_scroll.confringo": "Spell Scroll of Confringo",
+  "item.sensorywizards2.spell_scroll.episky": "Spell Scroll of Episky",
+  "item.sensorywizards2.spell_scroll.unknown": "Spell Scroll of The Unknown",
+
+  "itemGroup.sensorywizards2": "Sensory Wizards 2",
+  "itemGroup.sensorywizards2_wands": "Sensory Wizards • All Wands",
+  "itemGroup.sensorywizards2.spell_scrolls": "Sensory Wizards • Scrolls"
 }
